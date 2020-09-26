@@ -6,12 +6,19 @@
    <body>
        <h1>Web Calculator</h1>
        <form>
-       var x <input type="text" id="varx" value=""/>
-       var y <input type="text" id="vary" value=""/>
-       <input type="button" style="background-color: darkorchid ;" onclick="sum();" value=" Submit"/>
+       <input type="text" id="value1" value=""/>
+       <select id="operator">
+           <option value="+">+</option>
+           <option value="-">-</option>
+           <option value="*">*</option>
+           <option value="/">/</option>
+       </select>
+       <input type="text" id="value2" value=""/>
+       <input type="button" onclick="calculate()" style="background-color: darkorchid ;" onclick="sum();" value=" Submit"/>
        <br><br>
-       var result <input type="text" id="varresult">
+       
    </form>
+   <span id="answer"></span>
        </body> 
        </head>
        </html> 
